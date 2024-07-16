@@ -1,0 +1,43 @@
+package com.Swaglabs.Steps;
+
+import io.cucumber.java.en.*;
+
+public class Login_stepDef 
+{
+	
+	@Given("Swaglab Home is Open")
+	public void swaglab_home_is_open() 
+	{
+	    
+	}
+
+	@When("User get the title of home page")
+	public void user_get_the_title_of_home_page() 
+	{
+	    
+	}
+
+	@Then("Title should match with {string}")
+	public void title_should_match_with(String string) 
+	{
+	   
+	}
+
+	@When("User enter valid Username and Password")
+	public void user_enter_valid_username_and_password() 
+	{
+	   
+	}
+
+	@When("Click on Login button")
+	public void click_on_login_button() 
+	{
+	    
+	}
+
+	@Then("User should able to login and nevigated to Inventory page")
+	public void user_should_able_to_login_and_nevigated_to_inventory_page() 
+	{
+	   
+	}
+}

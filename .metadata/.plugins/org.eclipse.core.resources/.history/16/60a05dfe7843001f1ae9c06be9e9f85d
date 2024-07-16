@@ -1,0 +1,12 @@
+package com.Swaglabs.Utility;
+
+import org.openqa.selenium.WebDriver;
+
+public class BrowserUtility 
+{
+	
+	public WebDriver driver;
+	
+	ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+
+}

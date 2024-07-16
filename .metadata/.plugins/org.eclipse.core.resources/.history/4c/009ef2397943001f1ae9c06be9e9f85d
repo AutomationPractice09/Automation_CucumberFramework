@@ -1,0 +1,30 @@
+package com.Swaglabs.Utility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserUtility 
+{
+	
+	public WebDriver driver;
+	
+	ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+	
+	public void setDriver(String bname)
+	{
+		if(bname.equalsIgnoreCase("chrome"))
+		{
+			driver = new ChromeDriver();
+			tdriver.set(driver);
+		}
+		else if(bname.equalsIgnoreCase("edge"))
+		{
+			
+		}
+		else if(bname.equalsIgnoreCase("firefox"))
+		{
+			
+		}
+	}
+
+}
