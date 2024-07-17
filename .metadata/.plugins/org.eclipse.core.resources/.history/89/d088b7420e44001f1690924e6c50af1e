@@ -1,0 +1,48 @@
+package com.Swaglabs.Steps;
+
+import io.cucumber.java.en.*;
+
+public class Cart_stepDef 
+{
+	@Given("User Add product to Cart")
+	public void user_add_product_to_cart() 
+	{
+
+
+	}
+
+	@Given("User is on Cart Page")
+	public void user_is_on_cart_page() 
+	{
+
+
+	}
+
+	@When("User get Product Description")
+	public void user_get_product_description() 
+	{
+
+
+	}
+
+	@Then("User Print the Product Description")
+	public void user_print_the_product_description() 
+	{
+
+
+	}
+
+	@When("User click on Checkout button")
+	public void user_click_on_checkout_button() 
+	{
+
+
+	}
+
+	@Then("User land on Checkout Page")
+	public void user_land_on_checkout_page() 
+	{
+
+
+	}
+}

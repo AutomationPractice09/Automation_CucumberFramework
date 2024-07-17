@@ -14,7 +14,7 @@ public class AppHooks
 	@Before
 	public void setBrowser()
 	{
-		driver = BrowserUtility.setDriver("chrome");
+		driver = BrowserUtility.setDriver("edge");
 	}
 	
 }

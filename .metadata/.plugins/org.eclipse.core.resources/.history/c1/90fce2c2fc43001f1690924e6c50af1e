@@ -1,0 +1,9 @@
+Feature: Test Inventory Page
+
+Scenario: Test for Total Product count
+
+
+Scenario: Test for Product List
+
+
+Scenario: Test for Add product to Cart

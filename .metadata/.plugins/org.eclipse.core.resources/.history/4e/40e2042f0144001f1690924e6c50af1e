@@ -1,0 +1,56 @@
+package com.Swaglabs.Steps;
+
+import io.cucumber.java.en.*;
+
+public class Inventory_stepDef 
+{
+	private InventoryPage ip;
+	
+	@Given("User is Logged in Application")
+	public void user_is_logged_in_application(io.cucumber.datatable.DataTable dataTable) 
+	{
+	    
+	}
+
+	@Given("User is on Inventory Page")
+	public void user_is_on_inventory_page() 
+	{
+	    
+	}
+
+	@When("User get Product count")
+	public void user_get_product_count() 
+	{
+	    
+	}
+
+	@Then("Total product should be match with {int}")
+	public void total_product_should_be_match_with(Integer int1) 
+	{
+	    
+	}
+
+	@When("User get the Product list")
+	public void user_get_the_product_list() 
+	{
+	   
+	}
+
+	@Then("List should be display all products")
+	public void list_should_be_display_all_products() 
+	{
+	    
+	}
+
+	@When("User add product into cart")
+	public void user_add_product_into_cart() 
+	{
+	    
+	}
+
+	@Then("Product should be added successfully")
+	public void product_should_be_added_successfully() {
+	    
+	}
+	
+}

@@ -43,10 +43,11 @@ public class LoginPage
 		return driver.getCurrentUrl();
 	}
 	
-	public void doLogin(String un, String pwd)
+	public InventoryPage doLogin(String un, String pwd)
 	{
 		driver.findElement(username).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(button).click();
+		return new InventoryPage(driver);
 	}
 }

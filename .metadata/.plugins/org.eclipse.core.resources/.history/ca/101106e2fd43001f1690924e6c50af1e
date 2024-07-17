@@ -1,0 +1,14 @@
+Feature: Test Inventory Page
+
+Background:
+Given User is Logged in Application
+|username|password|
+|standard_user|secret_sauce|
+
+Scenario: Test for Total Product count
+
+
+Scenario: Test for Product List
+
+
+Scenario: Test for Add product to Cart

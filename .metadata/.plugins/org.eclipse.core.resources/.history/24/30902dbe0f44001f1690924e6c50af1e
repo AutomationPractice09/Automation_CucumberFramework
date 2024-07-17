@@ -1,0 +1,59 @@
+package com.Swaglabs.Steps;
+
+import java.util.List;
+import java.util.Map;
+
+import org.testng.Assert;
+
+import com.Swaglabs.Pages.CartPage;
+import com.Swaglabs.Pages.InventoryPage;
+import com.Swaglabs.Pages.LoginPage;
+import com.Swaglabs.Utility.BrowserUtility;
+
+import io.cucumber.java.en.*;
+
+public class Cart_stepDef 
+{
+	private LoginPage lp = new LoginPage(BrowserUtility.getDriver());
+	private InventoryPage ip;
+	private CartPage cp;
+	
+	@Given("User Add product to Cart")
+	public void user_add_product_to_cart() 
+	{
+		ip.addProductCart("Sauce Labs Fleece Jacket");
+		cp = ip.getCartPage();
+	}
+
+	@Given("User is on Cart Page")
+	public void user_is_on_cart_page() 
+	{
+		System.out.println(cp.getCurrentUrl());
+	}
+
+	@When("User get Product Description")
+	public void user_get_product_description() 
+	{
+		cp.getProductDesc();
+	}
+
+	@Then("User Print the Product Description")
+	public void user_print_the_product_description() 
+	{
+		System.out.println(cp.getProductDesc());
+	}
+
+	@When("User click on Checkout button")
+	public void user_click_on_checkout_button() 
+	{
+		cp.checkoutProduct();
+	}
+
+	@Then("User land on Checkout Page")
+	public void user_land_on_checkout_page() 
+	{
+		String actual = cp.getAppUrl();
+		Assert.assertTrue(actual.contains("checkout"),"TC is Failed");
+		System.out.println("Test case Passed");
+	}
+}

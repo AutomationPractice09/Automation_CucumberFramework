@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SwaglabsRunner" project="CucumberFramework_Swaglabs" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.Swaglabs.Runner.SwaglabsRunner" time="24.446">
+    <testsuite name="Test Inventory Page" time="24.446">
+      <testcase name="Test for Total Product count" classname="Test Inventory Page" time="8.026"/>
+      <testcase name="Test for Product List" classname="Test Inventory Page" time="7.979"/>
+      <testcase name="Test for Add product to Cart" classname="Test Inventory Page" time="8.44"/>
+    </testsuite>
+  </testsuite>
+</testrun>
